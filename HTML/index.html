@@ -25,11 +25,13 @@
                 .affix + .container-fluid {
                     padding-top: 70px;
                 }
+			/*
                 .nav>li>a:focus, .nav>li>a:hover
                 {
                       
                         color: red;
                 }
+			*/
                  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -61,6 +63,44 @@
       }
       .row.content {height:auto;} 
     }
+			
+			/* Hưng vừa mới thêm */
+			ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dodgerblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/* Change the link color on hover */
+			.Menu a:visited:not(.active) {
+	color: white;
+    background-color: transparent;
+}
+.Menu a:hover:not(.active) {
+    color: white;
+    background-color: #2B3AE1;
+}
+.Menu a:active:not(.active) {
+    color: white;
+    background-color: transparent;
+}
                 </style>
 
     </head>
@@ -70,14 +110,14 @@
             </div>
             <!--Start menu-->
             <nav class="navbar" data-spy="affix" data-offset-top="197" style="background-color: dodgerblue; font-size: 16px; font-weight: bolder; ">
-              <ul class="nav navbar-nav" class="Menu"  >
-                <li class="active" ><a href="#" style="color:white;">Về nhà</a></li>
-                <li class="Menu"><a href="#" style="color:white;">Bán Hàng</a></li>
-                <li class="Menu"><a href="#" style="color:white;">Thông tin</a></li>
-                <li class="Menu"><a href="#" style="color:white;">Hổ trợ kỹ thuật</a></li>
-                <li class="Menu"><a href="#" style="color:white;">Liên hệ</a></li>
+              <ul class="Menu" >
+                <li class="Menu" ><a class="active" style ="text-decoration: none; color: white" href="#" >Về nhà</a></li>
+                <li class="Menu"><a style ="text-decoration: none" href="#" >Bán Hàng</a></li>
+                <li class="Menu"><a style ="text-decoration: none" href="#" >Thông tin</a></li>
+                <li class="Menu"><a style ="text-decoration: none" href="#" >Hổ trợ kỹ thuật</a></li>
+                <li class="Menu"><a style ="text-decoration: none" href="#" >Liên hệ</a></li>
               </ul>
-            </nav>
+		</nav>
             <!--End Menu-->
 
             <!-- Start Body Content-->
